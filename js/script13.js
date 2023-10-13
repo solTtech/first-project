@@ -52,7 +52,12 @@ const adultsUsers = users.filter(function (element) {
 });
 console.log(adultsUsers);
 */
-const correctName = users.map(function (item) {
-    return item.sex == "male" ? "Mr. " + item.name : "Mrs. " + item.name;
+/* const correctName = users.map(function (item) {
+return item.sex === "male" ? "Mr. " + item.name : "Mrs. " + item.name;
 });
-console.log(correctName);
+console.log(correctName); */
+
+const summ = users.reduce(function (accumulator, cerrentValue, index, arr) {
+    return accumulator + cerrentValue.age;
+    }, 0);
+    console.log(summ / users.length);

@@ -46,18 +46,16 @@ users.forEach(function (element, index) {
 
 console.log(count);
 */
-/*
-const adultsUsers = users.filter(function (element) {
-    return element.age >= 18;
-});
+
+   const adultsUsers = users.filter(element => element.age >= 30);
 console.log(adultsUsers);
-*/
+
 /* const correctName = users.map(function (item) {
 return item.sex === "male" ? "Mr. " + item.name : "Mrs. " + item.name;
 });
 console.log(correctName); */
 
-const summ = users.reduce(function (accumulator, cerrentValue, index, arr) {
+/* const summ = users.reduce(function (accumulator, cerrentValue, index, arr) {
     return accumulator + cerrentValue.age;
     }, 0);
-    console.log(summ / users.length);
+    console.log(summ / users.length); */

@@ -16,8 +16,8 @@ fetch('https://jsonplaceholder.typicode.com/photos')
 
       
 fetch('https://jsonplaceholder.typicode.com/photos')
-.then(response => response.json())
-.then(json => console.log(json))
+      .then(response => response.json())
+      .then(json => console.log(json))
 
 console.log(1);
 console.log(2);
